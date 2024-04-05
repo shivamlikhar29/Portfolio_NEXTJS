@@ -9,12 +9,11 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>MERN Stack</li>
+        <li>DevOps</li>
+        <li>AWS</li>
+        <li>Databases</li>
+        <li>C, C++, Java, JavaScript, Python</li>
       </ul>
     ),
   },
@@ -23,8 +22,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Pursuing Integrated MCA from Acropolis Institute of Technology and Research, Indore India</li>
       </ul>
     ),
   },
@@ -33,8 +31,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>IBM Full Stack Developer Certificate</li>
+        <li>IIT Bombay C Certificate</li>
+        <li>Cisco Networking Certificate</li>
       </ul>
     ),
   },
@@ -51,7 +50,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white py-20" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
@@ -59,8 +58,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with Mern stack, Java, JavaScript, Python, React, Redux, Node.js, Express, MongoDB, MySQL, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>

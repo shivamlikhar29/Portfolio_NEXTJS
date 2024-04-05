@@ -25,3 +25,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes slide{
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+
+.slide:hover{
+  animation-play-state: paused;
+}
+.slide{
+  animation: 30s slide infinite linear;
+}
+

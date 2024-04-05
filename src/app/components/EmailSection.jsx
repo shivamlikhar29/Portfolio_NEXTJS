@@ -11,6 +11,7 @@ const EmailSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
+      name: e.target.name.value,
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
@@ -56,10 +57,10 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/shivamlikhar29" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://linkedin.com/in/shivam-likhar-67bba8267" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -71,6 +72,24 @@ const EmailSection = () => {
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
+            {/*  */}
+             <div className="mb-6">
+              <label
+                htmlFor="name"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Your Name
+              </label>
+              <input
+                name="name"
+                type="name"
+                id="name"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="John Doe"
+              />
+            </div>
+            {/*  */}
             <div className="mb-6">
               <label
                 htmlFor="email"
